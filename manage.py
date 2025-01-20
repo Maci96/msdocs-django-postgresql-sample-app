@@ -29,6 +29,9 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+    # Print the environment variable 'SECRET_ENV'
+    print(os.getenv('SECRET_ENV'))
+
 
 if __name__ == '__main__':
     main()
